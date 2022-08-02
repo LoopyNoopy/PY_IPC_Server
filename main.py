@@ -21,6 +21,7 @@ def IPCRequest(msg):
             number_of_colors = 1
             color = ["#" + ''.join([random.choice('0123456789ABCDEF') for j in range(6)])
                      for i in range(number_of_colors)]
+            print("Colour Generated: " + str(color))
             IPCSend(color)
             return "background"
     return(msg)
